@@ -20,10 +20,11 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            margin: 0;
         }
         /* Header */
         header {
-            background-color: #2f3b4c; /* Dunklerer Farbton für Header */
+            background-color: #2f3b4c;
             color: #fff;
             text-align: center;
             padding: 50px 20px;
@@ -37,13 +38,13 @@
         header p {
             font-size: 1.2rem;
             font-weight: 400;
-            color: #a3b3c4; /* Subtile Schriftfarbe für den Text */
+            color: #a3b3c4;
         }
         /* Main Content */
         main {
             flex: 1;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsiv grid */
             gap: 30px;
             padding: 40px 20px;
             max-width: 1200px;
@@ -58,7 +59,6 @@
             transition: transform 0.3s, box-shadow 0.3s;
             cursor: pointer;
             opacity: 0.9;
-            transition: opacity 0.3s, box-shadow 0.3s;
         }
         .card:hover {
             transform: translateY(-6px);
@@ -67,7 +67,7 @@
         }
         .card a {
             text-decoration: none;
-            color: #2f3b4c; /* Akzentfarbe für Links */
+            color: #2f3b4c;
             font-size: 1.3rem;
             font-weight: 600;
             display: block;
@@ -75,7 +75,7 @@
             transition: color 0.3s;
         }
         .card a:hover {
-            color: #ff6600; /* Orange für Hover */
+            color: #ff6600;
         }
         /* Footer */
         footer {
@@ -101,8 +101,8 @@
             }
             .card {
                 padding: 30px;
-                margin: 0 auto;
                 width: 90%;
+                margin: 0 auto;
             }
         }
 
@@ -115,7 +115,8 @@
             }
             .card {
                 padding: 25px;
-                width: 95%;
+                width: 90%;
+                margin: 0 auto;
             }
         }
     </style>
